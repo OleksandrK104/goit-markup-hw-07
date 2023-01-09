@@ -125,14 +125,17 @@ h1, h2, h3, p {
 }
 /* ---------Hero--------- */
 .section.hero {
-    padding-top: 192px;
-    padding-bottom: 192px;
+    padding-top: 112px;
+    padding-bottom: 112px;
     margin-left: auto;
     margin-right: auto;
-    max-width: 1440px;
+    max-width: 428px;
+
+    text-align: center;
 
     background-color: var(--secondary-background-color);
-    background-image:linear-gradient(rgba(46, 47, 66, 0.7),rgba(46, 47, 66, 0.7)),url('../images/people-office.jpg');
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url('../images/bgi-mobile.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -140,17 +143,25 @@ h1, h2, h3, p {
     border: 1px solid #000000;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     
-    text-align: center;
 }
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px),
+(min-resolution: 192dpi) and (max-width: 767px),
+(min-resolution: 2dppx) and (max-width: 767px) {
+    .section.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/bgi-mobile@2x.jpg');
+    }
+}
+
 .hero-title {
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 48px;
-    width: 492px;
+    margin-bottom: 72px;
+    max-width: 318px;
 
     font-weight: 500;
-    font-size: 56px;
-    line-height: 1.07;
+    font-size: 36px;
+    line-height: 1.11;
 
     color: var(--hero-text-color);
 }
@@ -177,13 +188,10 @@ h1, h2, h3, p {
 }
 .hero-button:hover,
 .hero-button:focus {
-    background-color: var(--primary-brand-color);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.hero-button:active {
     background-color: var(--button-active-background-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
+
 /* Section */
 .section {
     padding-top: 120px;
@@ -828,7 +836,7 @@ h1, h2, h3, p {
 }
 
 @media screen and (max-width: 767px) {
-    /* -----header-------- */
+    /* HEADER */
     .site-nav,
     .contacts {
         display: none;
@@ -983,7 +991,7 @@ h1, h2, h3, p {
     .container {
         width: 768px;
     }
-        /* -----header-------- */
+    /* HEADER */
 
     .logo-header {
         padding-top: 24px;
@@ -1017,9 +1025,34 @@ h1, h2, h3, p {
         margin-left: auto;
         padding-top: 24px;
     }
+    /* HERO */
+    .section.hero {
+        padding-bottom: 108px;
+        max-width: 768px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('../images/bgi-tablet.jpg');
+    }
+    .hero-title {
+        margin-bottom: 40px;
+        max-width: 494px;
+    
+        font-weight: 500;
+        font-size: 56px;
+        line-height: 1.07;
+    }
 }
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px),
+(min-resolution: 192dpi) and (min-width: 768px),
+(min-resolution: 2dppx) and (min-width: 768px) {
+    .section.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/bgi-tablet@2x.jpg');
+    }
+}
+
 @media screen and (max-width: 1199px) {
-    /* -----header-------- */
+    /* HEADER */
     .contacts {
         font-weight: 400;
         font-size: 12px;
@@ -1037,7 +1070,7 @@ h1, h2, h3, p {
         margin-right: auto;
         margin-left: auto;
     }
-        /* -----header-------- */
+        /* HEADER */
     .site-nav {
         margin-left: 76px;
     }
@@ -1050,5 +1083,25 @@ h1, h2, h3, p {
     }
     .contacts .item:not(:last-child) {
         margin-right: 40px;
+    }
+        /* HERO */
+    .section.hero {
+        padding-top: 188px;
+        padding-bottom: 188px;
+        max-width: 1440px;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+        url('../images/bgi-desktop.jpg');
+    }
+    .hero-title {
+        margin-bottom: 48px;
+    }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+(min-resolution: 192dpi) and (min-width: 1200px),
+(min-resolution: 2dppx) and (min-width: 1200px) {
+    .section.hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+    url('../images/bgi-desktop@2x.jpg');
     }
 }
