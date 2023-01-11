@@ -32,10 +32,11 @@ h1, h2, h3, p {
     margin-top: 0;
     margin-bottom: 0;
 }
-.list img {
+img {
     display: block;
+    max-width: 100%;
+    height: auto;
 }
-
 .list {
     margin: 0;
     padding-left: 0;
@@ -453,6 +454,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     background-color: rgba(46, 47, 66, 0.4);
+
+    overflow-y: auto;
 }
 .backdrop.is-hidden {
     opacity: 0;
@@ -470,7 +473,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     padding: 24px;
     padding-top: 72px;
     
-    width: 408px;
+    width: 100%;
+    max-width: 392px;
 
     background-color: var(--modal-bg-color);
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -523,7 +527,7 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     color: var(--form-text-color);
 }
 .form {
-    width: 360px;
+    width: 100%;
 }
 .form-box {
     position: relative;
@@ -839,6 +843,8 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         width: 100%;
         height: 100%;
 
+        overflow-y: auto;
+
         background-color: var(--btn-filter-hover-color);
     }
     .menu-btn-close {
@@ -1037,7 +1043,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .container-footer.tablet {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
+
+        padding-left: 108px;
+        padding-right: 108px;
     }
     .box-footer-adapt {
         align-items: start;
@@ -1053,6 +1061,9 @@ screen and (min-resolution: 2dppx) and (max-width: 767px) {
         .footer-form-input {
         margin-right: 24px;
         width: 264px;
+    }
+    .modal {
+        width: 408px;
     }
 }
 
@@ -1100,9 +1111,6 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     }
     .team .img-team:nth-child(-n + 2) {
         margin-bottom: 64px;
-    }
-    .footer-form {
-        width: 500px;
     }
 }
 
@@ -1188,6 +1196,10 @@ screen and (min-resolution: 2dppx) and (min-width: 768px) {
     }
     .box-footer-adapt {
         margin: 0;
+    }
+    .container-footer.tablet {
+        padding-right: 0;
+        padding-left: 0;
     }
     .conteiner-soc-media {
         margin-bottom: 0;
