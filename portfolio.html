@@ -39,6 +39,74 @@
                     <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
                 </li>
             </ul>
+            <!-- ------Mobile menu----- -->
+            <button type="button" class="mobile-open-menu" data-menu-open>
+                <svg class="menu-btn-open" width="32" height="22">
+                    <use href="./images/icons.svg#icon-hamburger"></use>
+                </svg>
+            </button>
+            </div>
+            <div class="mobile-menu" data-menu>
+                <div class="mobile-menu-container">
+                    <button type="button" class="menu-btn-close" data-menu-close>
+                        <svg cwidth="8" height="8">
+                            <use class="svg-use-close-mobile-menu" href="./images/icons.svg#close-black"></use>
+                        </svg>
+                    </button>
+                    <div class="flex-box-contacts-menu">
+                        <ul class="nav-mobile-menu list">
+                            <li class="item">
+                                <a href="./index.html" class="link">Studio</a>
+                            </li>
+                            <li class="item">
+                                <a href="./portfolio.html" class="link">Portfolio</a>
+                            </li>
+                            <li class="item">
+                                <a href="" class="link">Contacts</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <ul class="contacts-mobile-menu list">
+                                <li class="item">
+                                    <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+                                </li>
+                                <li class="item">
+                                    <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                                </li>
+                            </ul>
+                            <ul class="list mobile-menu-list-icon">
+                                <li class="item mobile-menu-item-icon">
+                                    <a class="link mobile-menu-link-icon" href="">
+                                        <svg width="24" height="24">
+                                            <use href="./images/icons.svg#instagram"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="item mobile-menu-item-icon">
+                                    <a class="link mobile-menu-link-icon" href="">
+                                        <svg width="24" height="24">
+                                            <use href="./images/icons.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="item mobile-menu-item-icon">
+                                    <a class="link mobile-menu-link-icon" href="">
+                                        <svg width="24" height="24">
+                                            <use href="./images/icons.svg#facebook"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="item mobile-menu-item-icon">
+                                    <a class="link mobile-menu-link-icon" href="">
+                                        <svg width="24" height="24">
+                                            <use href="./images/icons.svg#linkedin"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
         </div>
     </header>
     <!-- MAIN -->
@@ -70,13 +138,21 @@
                 <li class="item card-item">
                     <a href="" class="link link-animation-card">
                             <div class="animation-card">
-                                <img src="./images/project-card1.jpg" alt="seven windows with the application interface" width="360">
+                                <picture>
+                                    <source srcset="./images/project-card-desktop1-360.jpg 1x, ./images/project-card-desktop1-720.jpg 2x"
+                                        media="(min-width: 1200px)">
+                                    <source srcset="./images/project-card-tablet1-356.jpg 1x, ./images/project-card-tablet1-712.jpg 2x" 
+                                    media="(min-width: 768px)">
+                                    <source srcset="./images/project-card-mobile1-396.jpg 1x, ./images/project-card-mobile1-792.jpg 2x" 
+                                    media="(max-width: 767px)">
+                                    <img src="./images/project-card-mobile1-396.jpg" alt="seven windows with the application interface" width="396">
+                                </picture>
                             <p class="animation-card-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App
                                 · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                             </div>
                         <div class="text-card">
-                            <h3 class="title">Banking App Interface Concept</h3>
+                            <h3 class="title mob-tab">Banking App Interface Concept</h3>
                             <p>App</p>
                         </div>
                         </a>
@@ -84,13 +160,21 @@
                 <li class="item card-item">
                     <a href="" class="link link-animation-card">
                         <div class="animation-card">
-                            <img src="./images/project-card2.jpg" alt="a person scans a qr code with a smartphone" width="360">
+                            <picture>
+                                <source srcset="./images/project-card-desktop2-360.jpg 1x, ./images/project-card-desktop2-720.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/project-card-tablet2-356.jpg 1x, ./images/project-card-tablet2-712.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/project-card-mobile2-396.jpg 1x, ./images/project-card-mobile2-792.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/project-card-mobile2-396.jpg" alt="a person scans a qr code with a smartphone" width="396">
+                            </picture>
                             <p class="animation-card-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App
                                 · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                         </div>
                         <div class="text-card">
-                            <h3 class="title">Cashless Payment</h3>
+                            <h3 class="title mob-tab">Cashless Payment</h3>
                             <p>Marketing</p>
                         </div>
                         </a>
@@ -98,13 +182,21 @@
                 <li class="item card-item">
                     <a href="" class="link link-animation-card">
                         <div class="animation-card">
-                            <img src="./images/project-card3.jpg" alt="laptop and smartphone on a dark background" width="360">
+                            <picture>
+                                <source srcset="./images/project-card-desktop3-360.jpg 1x, ./images/project-card-desktop3-720.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/project-card-tablet3-356.jpg 1x, ./images/project-card-tablet3-712.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/project-card-mobile3-396.jpg 1x, ./images/project-card-mobile3-792.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/project-card-mobile3-396.jpg" alt="laptop and smartphone on a dark background" width="396">
+                            </picture>
                             <p class="animation-card-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App
                                 · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                         </div>
                         <div class="text-card">
-                            <h3 class="title">Meditaion App</h3>
+                            <h3 class="title mob-tab">Meditaion App</h3>
                             <p>App</p>
                         </div>
                         </a>
@@ -112,13 +204,22 @@
                 <li class="item card-item">
                     <a href="" class="link link-animation-card">
                         <div class="animation-card">
-                            <img src="./images/project-card4.jpg" alt="smartphone in the car. the driver holds the steering wheel" width="360">
+                            <picture>
+                                <source srcset="./images/project-card-desktop4-360.jpg 1x, ./images/project-card-desktop4-720.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/project-card-tablet4-356.jpg 1x, ./images/project-card-tablet4-712.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/project-card-mobile4-396.jpg 1x, ./images/project-card-mobile4-792.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/project-card-mobile4-396.jpg" alt="smartphone in the car. the driver holds the steering wheel"
+                                    width="396">
+                            </picture>
                             <p class="animation-card-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App
                                 · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                         </div>
                             <div class="text-card">
-                                <h3 class="title">Taxi Service</h3>
+                                <h3 class="title mob-tab">Taxi Service</h3>
                                 <p>Marketing</p>
                             </div>
                         </a>
@@ -126,13 +227,21 @@
                 <li class="item card-item">
                     <a href="" class="link link-animation-card">
                         <div class="animation-card">
-                            <img src="./images/project-card5.jpg" alt="smartphone on a white background" width="360">
+                            <picture>
+                                <source srcset="./images/project-card-desktop5-360.jpg 1x, ./images/project-card-desktop5-720.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/project-card-tablet5-356.jpg 1x, ./images/project-card-tablet5-712.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/project-card-mobile5-396.jpg 1x, ./images/project-card-mobile5-792.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/project-card-mobile5-396.jpg" alt="smartphone on a white background" width="396">
+                            </picture>
                             <p class="animation-card-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App
                                 · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                         </div>
                         <div class="text-card">
-                            <h3 class="title">Screen Illustrations</h3>
+                            <h3 class="title mob-tab">Screen Illustrations</h3>
                             <p>Design</p>
                         </div>
                         </a>
@@ -140,13 +249,21 @@
                 <li class="item card-item">
                     <a href="" class="link link-animation-card">
                         <div class="animation-card">
-                            <img src="./images/project-card6.jpg" alt="a girl in headphones holds a smartphone in her hand" width="360">
+                            <picture>
+                                <source srcset="./images/project-card-desktop6-360.jpg 1x, ./images/project-card-desktop6-720.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/project-card-tablet6-356.jpg 1x, ./images/project-card-tablet6-712.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/project-card-mobile6-396.jpg 1x, ./images/project-card-mobile6-792.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/project-card-mobile6-396.jpg" alt="a girl in headphones holds a smartphone in her hand" width="396">
+                            </picture>
                             <p class="animation-card-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App
                                 · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                         </div>
                         <div class="text-card">
-                            <h3 class="title">Online Courses</h3>
+                            <h3 class="title mob-tab">Online Courses</h3>
                             <p>Marketing</p>
                         </div>
                         </a>
@@ -154,13 +271,21 @@
                 <li class="item card-item">
                     <a href="" class="link link-animation-card">
                         <div class="animation-card">
-                            <img src="./images/project-card7.jpg" alt="there is a smartphone and a computer on the table" width="360">
+                            <picture>
+                                <source srcset="./images/project-card-desktop7-360.jpg 1x, ./images/project-card-desktop7-720.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/project-card-tablet7-356.jpg 1x, ./images/project-card-tablet7-712.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/project-card-mobile7-396.jpg 1x, ./images/project-card-mobile7-792.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/project-card-mobile7-396.jpg" alt="there is a smartphone and a computer on the table" width="396">
+                            </picture>
                             <p class="animation-card-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App
                                 · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                         </div>
                         <div class="text-card">
-                            <h3 class="title">Instagram Stories Concept</h3>
+                            <h3 class="title mob-tab">Instagram Stories Concept</h3>
                             <p>Design</p>
                         </div>
                         </a>
@@ -168,13 +293,21 @@
                 <li class="item card-item">
                     <a href="" class="link link-animation-card">
                         <div class="animation-card">
-                            <img src="./images/project-card8.jpg" alt="the girl is holding a bag with food" width="360">
+                            <picture>
+                                <source srcset="./images/project-card-desktop8-360.jpg 1x, ./images/project-card-desktop8-720.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/project-card-tablet8-356.jpg 1x, ./images/project-card-tablet8-712.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/project-card-mobile8-396.jpg 1x, ./images/project-card-mobile8-792.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/project-card-mobile8-396.jpg" alt="the girl is holding a bag with food" width="396">
+                            </picture>
                             <p class="animation-card-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App
                                 · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                         </div>
                         <div class="text-card">
-                            <h3 class="title">Organic Food</h3>
+                            <h3 class="title mob-tab">Organic Food</h3>
                             <p>Web Site</p>
                         </div>
                         </a>
@@ -182,13 +315,21 @@
                 <li class="item card-item">
                     <a href="" class="link link-animation-card">
                         <div class="animation-card">
-                            <img src="./images/project-card9.jpg" alt="a man makes a pattern on a cup of coffee" width="360">
+                            <picture>
+                                <source srcset="./images/project-card-desktop9-360.jpg 1x, ./images/project-card-desktop9-720.jpg 2x"
+                                    media="(min-width: 1200px)">
+                                <source srcset="./images/project-card-tablet9-356.jpg 1x, ./images/project-card-tablet9-712.jpg 2x"
+                                    media="(min-width: 768px)">
+                                <source srcset="./images/project-card-mobile9-396.jpg 1x, ./images/project-card-mobile9-792.jpg 2x"
+                                    media="(max-width: 767px)">
+                                <img src="./images/project-card-mobile9-396.jpg" alt="a man makes a pattern on a cup of coffee" width="396">
+                            </picture>
                             <p class="animation-card-text">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App
                                 · Exotic Fruit Ecommerce App ·
                                 Cloud Storage App</p>
                         </div>
                         <div class="text-card">
-                            <h3 class="title">Fresh Coffee</h3>
+                            <h3 class="title mob-tab">Fresh Coffee</h3>
                             <p>Web Site</p>
                         </div>
                         </a>
@@ -251,5 +392,6 @@
             </form>
         </div>
     </footer>
+    <script src="./mobile-menu.js"></script>
 </body>
 </html>
